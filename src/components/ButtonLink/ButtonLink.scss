@@ -1,0 +1,24 @@
+.image{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background-size: 100% 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: all .3s linear;
+	
+	&:hover{
+		box-shadow: 0px 1px 10px 0px rgb(0 0 0 / 25%);
+	}
+}
+
+.filter{
+	width: 300px;
+	height: 300px;
+	background-color:rgba(0,0,0, .2);
+	transition: all .3s linear;
+
+	&:hover{
+		background-color:rgba(0,0,0, 0);
+	}
+}
