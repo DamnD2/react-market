@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-market/static/css/main.85edf55d.chunk.css",
-    "main.js": "/react-market/static/js/main.218df8eb.chunk.js",
-    "main.js.map": "/react-market/static/js/main.218df8eb.chunk.js.map",
+    "main.js": "/react-market/static/js/main.252973f6.chunk.js",
+    "main.js.map": "/react-market/static/js/main.252973f6.chunk.js.map",
     "runtime-main.js": "/react-market/static/js/runtime-main.56b9affa.js",
     "runtime-main.js.map": "/react-market/static/js/runtime-main.56b9affa.js.map",
-    "static/js/2.96e4c826.chunk.js": "/react-market/static/js/2.96e4c826.chunk.js",
-    "static/js/2.96e4c826.chunk.js.map": "/react-market/static/js/2.96e4c826.chunk.js.map",
+    "static/js/2.59d9a561.chunk.js": "/react-market/static/js/2.59d9a561.chunk.js",
+    "static/js/2.59d9a561.chunk.js.map": "/react-market/static/js/2.59d9a561.chunk.js.map",
     "static/js/3.f0d6c95c.chunk.js": "/react-market/static/js/3.f0d6c95c.chunk.js",
     "static/js/3.f0d6c95c.chunk.js.map": "/react-market/static/js/3.f0d6c95c.chunk.js.map",
     "index.html": "/react-market/index.html",
     "static/css/main.85edf55d.chunk.css.map": "/react-market/static/css/main.85edf55d.chunk.css.map",
-    "static/js/2.96e4c826.chunk.js.LICENSE.txt": "/react-market/static/js/2.96e4c826.chunk.js.LICENSE.txt",
+    "static/js/2.59d9a561.chunk.js.LICENSE.txt": "/react-market/static/js/2.59d9a561.chunk.js.LICENSE.txt",
     "static/media/coal.2d701ca8.jpg": "/react-market/static/media/coal.2d701ca8.jpg",
     "static/media/hookahs.7d986d74.jpg": "/react-market/static/media/hookahs.7d986d74.jpg",
     "static/media/nextArrow.483b3c1e.svg": "/react-market/static/media/nextArrow.483b3c1e.svg",
@@ -25,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.56b9affa.js",
-    "static/js/2.96e4c826.chunk.js",
+    "static/js/2.59d9a561.chunk.js",
     "static/css/main.85edf55d.chunk.css",
-    "static/js/main.218df8eb.chunk.js"
+    "static/js/main.252973f6.chunk.js"
   ]
 }
