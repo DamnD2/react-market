@@ -5,7 +5,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { Link, useHistory } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import firebase from 'firebase';
-import { isLoginModalContext, isSignupModalContext, BasketContext } from '../../core/contexts';
+import { IsLoginModalContext, IsSignupModalContext, BasketContext } from '../../core/contexts';
 import UserMenu from './UserMenu';
 import { totalBasketPrice, quantityOfGoodsInBasket } from '../../utils/basketCalculations';
 
@@ -23,8 +23,8 @@ const pathnameMap = {
 
 const Header = () => {
   const [tabValue, setTabValue] = useState(1);
-  const { setIsLoginModal } = useContext(isLoginModalContext);
-  const { setIsSignupModal } = useContext(isSignupModalContext);
+  const { setIsLoginModal } = useContext(IsLoginModalContext);
+  const { setIsSignupModal } = useContext(IsSignupModalContext);
   const { basket } = useContext(BasketContext);
   const [user] = useAuthState(firebase.auth());
   const classes = useStyles();

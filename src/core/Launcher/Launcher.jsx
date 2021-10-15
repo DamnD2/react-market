@@ -2,7 +2,7 @@ import { useState, StrictMode, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import firebase from 'firebase/app';
 import { ThemeProvider, createTheme } from '@material-ui/core';
-import { BasketContext, isLoginModalContext, isSignupModalContext, snackbarContext } from '../contexts';
+import { BasketContext, IsLoginModalContext, IsSignupModalContext, SnackbarContext } from '../contexts';
 
 const firebaseConfig = {
   apiKey: "AIzaSyC4V6oY-FwQPwUFXg4gH1oF0hEZlo0swYI",
@@ -33,20 +33,22 @@ const Launcher = ({ children }) => {
   useEffect(() => {
     const localStorageBasket = JSON.parse(localStorage.getItem('BASKET'));
 
-    setBasket(localStorageBasket);
+    if (localStorageBasket) {
+      setBasket(localStorageBasket);
+    }
   }, []);
 
   return (
     <StrictMode>
       <ThemeProvider theme={theme}>
         <BasketContext.Provider value={{ basket, setBasket }}>
-          <isLoginModalContext.Provider value={{ isLoginModal, setIsLoginModal }}>
-            <isSignupModalContext.Provider value={{ isSignupModal, setIsSignupModal }}>
-              <snackbarContext.Provider value={{ snackbar, setSnackbar }}>
+          <IsLoginModalContext.Provider value={{ isLoginModal, setIsLoginModal }}>
+            <IsSignupModalContext.Provider value={{ isSignupModal, setIsSignupModal }}>
+              <SnackbarContext.Provider value={{ snackbar, setSnackbar }}>
                 {children}
-              </snackbarContext.Provider>
-            </isSignupModalContext.Provider>
-          </isLoginModalContext.Provider>
+              </SnackbarContext.Provider>
+            </IsSignupModalContext.Provider>
+          </IsLoginModalContext.Provider>
         </BasketContext.Provider>
       </ThemeProvider>
     </StrictMode>

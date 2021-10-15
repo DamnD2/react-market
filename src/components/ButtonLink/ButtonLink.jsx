@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import tobaco from './tobaco.jpg';
-import hookahs from './hookahs.jpg';
-import coal from './coal.jpg';
+import tobaco from '../../assets/images/buttonLink-tobaco.jpg';
+import hookahs from '../../assets/images/buttonLink-hookahs.jpg';
+import coal from '../../assets/images/buttonLink-coal.jpg';
 import './ButtonLink.scss';
 
 const imageTypeMap = {

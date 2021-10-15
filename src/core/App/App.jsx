@@ -1,4 +1,4 @@
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Container from '@material-ui/core/Container';
 import SignInForm from '../../components/SignInForm';
 import SignUpForm from '../../components/SignUpForm';

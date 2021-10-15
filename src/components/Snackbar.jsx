@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import Snackbar from '@material-ui/core/Snackbar';
 import Alert from '@material-ui/lab/Alert';
-import { snackbarContext } from '../core/contexts';
+import { SnackbarContext } from '../core/contexts';
 
 const SimpleSnackbar = () => {
-  const { snackbar, setSnackbar } = useContext(snackbarContext);
+  const { snackbar, setSnackbar } = useContext(SnackbarContext);
 
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {

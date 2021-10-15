@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Card, CardActions, CardContent, CardMedia, Button, Typography, Fab, TextField } from '@material-ui/core';
 import { Add, Remove } from '@material-ui/icons';
-import { BasketContext, snackbarContext } from '../core/contexts';
+import { BasketContext, SnackbarContext } from '../core/contexts';
 import { addBasketToLocalstorage } from '../utils/basketCalculations';
 
 const useStyles = makeStyles({
@@ -18,7 +18,7 @@ const useStyles = makeStyles({
 
 const GridItem = ({ title, price, description, img }) => {
   const { basket, setBasket } = useContext(BasketContext);
-  const { setSnackbar } = useContext(snackbarContext);
+  const { setSnackbar } = useContext(SnackbarContext);
   const classes = useStyles();
 
   const thisGoodsInBasket = basket.find((element) => element.title === title);

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { Button, TextField, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@material-ui/core';
 import firebase from 'firebase';
-import { BasketContext, snackbarContext } from '../../core/contexts';
+import { BasketContext, SnackbarContext } from '../../core/contexts';
 
 const useStyles = makeStyles({ field: { marginBottom: '30px' } });
 
@@ -11,7 +11,7 @@ const ConfirmOrderDialog = ({ open, setOpen }) => {
   const [error, setError] = useState('');
   const [fieldData, setFieldData] = useState({ name: '', phone: '' });
   const { basket, setBasket } = useContext(BasketContext);
-  const { setSnackbar } = useContext(snackbarContext);
+  const { setSnackbar } = useContext(SnackbarContext);
   const classes = useStyles();
 
   const sendOrder = async () => {

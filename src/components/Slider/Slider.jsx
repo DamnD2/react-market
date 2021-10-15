@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './Slider.scss';
-import image1 from './slider-1.jpg';
-import image2 from './slider-2.jpg';
-import image3 from './slider-3.jpg';
-import image4 from './slider-4.jpg';
-import image5 from './slider-5.jpg';
-import nextArrow from './nextArrow.svg';
-import prevArrow from './prevArrow.svg';
+import image1 from '../../assets/images/slider-item-1.jpg';
+import image2 from '../../assets/images/slider-item-2.jpg';
+import image3 from '../../assets/images/slider-item-3.jpg';
+import image4 from '../../assets/images/slider-item-4.jpg';
+import image5 from '../../assets/images/slider-item-5.jpg';
+import nextArrow from '../../assets/images/slider-NextArrow.svg';
+import prevArrow from '../../assets/images/slider-PrevArrow.svg';
 
 const images = [image1, image2, image3, image4, image5];
 

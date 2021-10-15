@@ -2,14 +2,14 @@ import { useContext, useState } from 'react';
 import firebase from 'firebase';
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { isSignupModalContext, snackbarContext } from '../core/contexts';
+import { IsSignupModalContext, SnackbarContext } from '../core/contexts';
 import firebaseErrorsMap from '../utils/firebaseErrorsMap';
 
 const useStyles = makeStyles({ field: { marginBottom: '30px' } });
 
 const SignUpForm = () => {
-  const { isSignupModal, setIsSignupModal } = useContext(isSignupModalContext);
-  const { setSnackbar } = useContext(snackbarContext);
+  const { isSignupModal, setIsSignupModal } = useContext(IsSignupModalContext);
+  const { setSnackbar } = useContext(SnackbarContext);
   const [fieldData, setFieldData] = useState({ name: '', password: '' });
   const [error, setError] = useState('');
   const classes = useStyles();
