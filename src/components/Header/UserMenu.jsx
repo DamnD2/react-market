@@ -17,7 +17,7 @@ const UserMenu = () => {
   return (
     <div>
       <Button aria-controls='user-menu' aria-haspopup='true' onClick={handleClick}>
-        {user.name ?? user.email}
+        {user.displayName ?? user.email}
         <AccountCircleIcon fontSize='large' />
       </Button>
       <Menu
